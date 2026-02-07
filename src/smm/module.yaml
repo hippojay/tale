@@ -1,0 +1,138 @@
+code: smm
+name: "SMM: SMAD Method Literature Development"
+header: "SMAD Method™: Story More, Author Dreams"
+subheader: "AI-driven framework for fiction and non-fiction writing with specialized literary agents"
+default_selected: true
+
+# Variables from Core Config inserted:
+## user_name
+## communication_language
+## document_output_language
+## output_folder
+
+project_title:
+  prompt: "What is the title of your writing project?"
+  default: "{directory_name}"
+  result: "{value}"
+
+project_type:
+  prompt:
+    - "What type of writing project are you working on?"
+    - "This affects which agents and workflows are most relevant."
+  default: "novel"
+  result: "{value}"
+  single-select:
+    - value: "novel"
+      label: "Novel - Full-length fiction work"
+    - value: "novella"
+      label: "Novella - Shorter fiction work (20k-50k words)"
+    - value: "short_story"
+      label: "Short Story - Brief fiction work (under 20k words)"
+    - value: "non_fiction"
+      label: "Non-Fiction - Memoir, biography, self-help, etc."
+    - value: "screenplay"
+      label: "Screenplay - Script for film or television"
+    - value: "stage_play"
+      label: "Stage Play - Script for theater"
+
+primary_genre:
+  prompt: "What is the primary genre of your work?"
+  default: "literary_fiction"
+  result: "{value}"
+  single-select:
+    - value: "literary_fiction"
+      label: "Literary Fiction - Character-driven, artistic prose"
+    - value: "commercial_fiction"
+      label: "Commercial Fiction - Plot-driven, mainstream appeal"
+    - value: "romance"
+      label: "Romance - Love story with happy ending"
+    - value: "mystery"
+      label: "Mystery/Thriller - Suspense and investigation"
+    - value: "science_fiction"
+      label: "Science Fiction - Futuristic or speculative elements"
+    - value: "fantasy"
+      label: "Fantasy - Magical or supernatural elements"
+    - value: "historical"
+      label: "Historical Fiction - Set in the past"
+    - value: "young_adult"
+      label: "Young Adult - Targeted at teen readers"
+    - value: "memoir"
+      label: "Memoir - Personal life story"
+    - value: "biography"
+      label: "Biography - Someone else's life story"
+    - value: "self_help"
+      label: "Self-Help - Instructional/motivational"
+    - value: "other"
+      label: "Other - Specify in project notes"
+
+target_word_count:
+  prompt: "What is your target word count?"
+  default: "80000"
+  result: "{value}"
+  single-select:
+    - value: "5000"
+      label: "Short Story (5k words)"
+    - value: "15000"
+      label: "Long Short Story (15k words)"
+    - value: "30000"
+      label: "Novella (30k words)"
+    - value: "60000"
+      label: "Short Novel (60k words)"
+    - value: "80000"
+      label: "Standard Novel (80k words)"
+    - value: "100000"
+      label: "Long Novel (100k words)"
+    - value: "custom"
+      label: "Custom - Specify in project notes"
+
+writing_experience:
+  prompt:
+    - "What is your writing experience level?"
+    - "This affects how agents explain concepts and provide guidance."
+  default: "intermediate"
+  result: "{value}"
+  single-select:
+    - value: "beginner"
+      label: "Beginner - New to creative writing, need detailed guidance"
+    - value: "intermediate"
+      label: "Intermediate - Some writing experience, balance guidance with efficiency"
+    - value: "experienced"
+      label: "Experienced - Seasoned writer, focus on advanced techniques"
+    - value: "professional"
+      label: "Professional - Published author, minimal explanation needed"
+
+writing_goals:
+  prompt: "What are your primary writing goals for this project?"
+  default: "complete_manuscript"
+  result: "{value}"
+  multi-select:
+    - value: "complete_manuscript"
+      label: "Complete a finished manuscript"
+    - value: "improve_craft"
+      label: "Improve writing craft and skills"
+    - value: "traditional_publishing"
+      label: "Pursue traditional publishing"
+    - value: "self_publishing"
+      label: "Self-publish the work"
+    - value: "personal_satisfaction"
+      label: "Personal creative fulfillment"
+    - value: "build_platform"
+      label: "Build author platform and audience"
+    - value: "contest_submission"
+      label: "Submit to contests or competitions"
+
+agents:
+  # Story Development
+  - story-architect.agent.yaml
+  - character-developer.agent.yaml
+  - world-builder.agent.yaml
+  # Writing Production
+  - ghost-writer.agent.yaml
+  - narrative-enrichment.agent.yaml
+  # Review & Editing
+  - story-reviewer.agent.yaml
+  - developmental-editor.agent.yaml
+  - line-editor.agent.yaml
+  - copy-editor.agent.yaml
+  # Publishing
+  - publishing-strategist.agent.yaml

@@ -1,0 +1,6 @@
+name: "Editorial Team"
+description: "Full editorial pipeline — developmental editor, line editor, and copy editor working together"
+agents:
+  - developmental-editor
+  - line-editor
+  - copy-editor

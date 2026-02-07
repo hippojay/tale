@@ -1,0 +1,6 @@
+name: "Story Development Team"
+description: "Planning and architecture — story architect, character developer, and world builder collaborating on story foundation"
+agents:
+  - story-architect
+  - character-developer
+  - world-builder
