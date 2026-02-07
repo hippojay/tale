@@ -11,87 +11,87 @@ Transform BMAD-METHOD (software agile framework) into SMAD (Story More, Author D
 
 ## Phase 1: Remove BMM, Create SMM Structure
 - [x] Create branch `smad-literary-framework`
-- [ ] 1.1 Delete `src/bmm/` entirely
-- [ ] 1.2 Create `src/smm/` directory structure
-- [ ] 1.3 Copy and fix all 10 agent YAML files (fix `_blad/` → `_smad/` paths, fix metadata IDs)
-- [ ] 1.4 Copy module.yaml from POC (already clean)
-- [ ] 1.5 Copy all 6 templates
-- [ ] 1.6 Copy all 41 populated workflow files
-- [ ] 1.7 Copy SRD step file (01-story-concept.md)
-- [ ] 1.8 Create SMM module installer (`src/smm/_module-installer/installer.js`)
+- [x] 1.1 Delete `src/bmm/` entirely
+- [x] 1.2 Create `src/smm/` directory structure
+- [x] 1.3 Copy and fix all 10 agent YAML files (fix `_blad/` → `_smad/` paths, fix metadata IDs)
+- [x] 1.4 Copy module.yaml from POC (already clean)
+- [x] 1.5 Copy all 6 templates
+- [x] 1.6 Copy all 41 populated workflow files
+- [x] 1.7 Copy SRD step file (01-story-concept.md)
+- [x] 1.8 Create SMM module installer (`src/smm/_module-installer/installer.js`)
 
 ## Phase 2: Fill Empty Workflows (11 files to create)
 Create workflow.md for each empty directory, matching existing style/depth:
 
 ### Copy Editing (agent: copy-editor / Patricia)
-- [ ] 2.1 `workflows/copy-editing/consistency-pass/workflow.md` — Check consistency across manuscript
-- [ ] 2.2 `workflows/copy-editing/fact-check/workflow.md` — Verify facts and references
-- [ ] 2.3 `workflows/copy-editing/final-proof/workflow.md` — Final proofread before publication
+- [x] 2.1 `workflows/copy-editing/consistency-pass/workflow.md` — Check consistency across manuscript
+- [x] 2.2 `workflows/copy-editing/fact-check/workflow.md` — Verify facts and references
+- [x] 2.3 `workflows/copy-editing/final-proof/workflow.md` — Final proofread before publication
 
 ### Line Editing (agent: line-editor / Catherine)
-- [ ] 2.4 `workflows/line-editing/dialogue-tightening/workflow.md` — Tighten and sharpen dialogue
-- [ ] 2.5 `workflows/line-editing/description-refinement/workflow.md` — Refine descriptive passages
-- [ ] 2.6 `workflows/line-editing/rhythm-analysis/workflow.md` — Analyze and improve prose rhythm
+- [x] 2.4 `workflows/line-editing/dialogue-tightening/workflow.md` — Tighten and sharpen dialogue
+- [x] 2.5 `workflows/line-editing/description-refinement/workflow.md` — Refine descriptive passages
+- [x] 2.6 `workflows/line-editing/rhythm-analysis/workflow.md` — Analyze and improve prose rhythm
 
 ### Publishing (agent: publishing-strategist / Alexandra)
-- [ ] 2.7 `workflows/publishing/launch-plan/workflow.md` — Create book launch strategy
-- [ ] 2.8 `workflows/publishing/publishing-path/workflow.md` — Evaluate traditional vs. self-publishing
+- [x] 2.7 `workflows/publishing/launch-plan/workflow.md` — Create book launch strategy
+- [x] 2.8 `workflows/publishing/publishing-path/workflow.md` — Evaluate traditional vs. self-publishing
 
 ### World Building (agent: world-builder / Theodore)
-- [ ] 2.9 `workflows/world-building/develop-culture/workflow.md` — Create detailed culture or society
-- [ ] 2.10 `workflows/world-building/location-detail/workflow.md` — Develop specific location in depth
-- [ ] 2.11 `workflows/world-building/world-consistency/workflow.md` — Check world consistency across manuscript
+- [x] 2.9 `workflows/world-building/develop-culture/workflow.md` — Create detailed culture or society
+- [x] 2.10 `workflows/world-building/location-detail/workflow.md` — Develop specific location in depth
+- [x] 2.11 `workflows/world-building/world-consistency/workflow.md` — Check world consistency across manuscript
 
 ## Phase 3: Rebrand Core (BMAD → SMAD)
 All files in `src/core/` and `src/utility/`:
 
 ### Core Agent
-- [ ] 3.1 Rename `bmad-master.agent.yaml` → `smad-master.agent.yaml`
-- [ ] 3.2 Rewrite agent persona/identity for literary orchestration
-- [ ] 3.3 Update menu triggers and paths (`_bmad` → `_smad`)
+- [x] 3.1 Rename `bmad-master.agent.yaml` → `smad-master.agent.yaml`
+- [x] 3.2 Rewrite agent persona/identity for literary orchestration
+- [x] 3.3 Update menu triggers and paths (`_bmad` → `_smad`)
 
 ### Core Module Config
-- [ ] 3.4 Update `src/core/module.yaml` — rename, change output folder default to `_smad-output`
+- [x] 3.4 Update `src/core/module.yaml` — rename, change output folder default to `_smad-output`
 
 ### Core Module Help CSV
-- [ ] 3.5 Update `src/core/module-help.csv` — rename all `bmad-` commands to `smad-`, update paths
+- [x] 3.5 Update `src/core/module-help.csv` — rename all `bmad-` commands to `smad-`, update paths
 
 ### Core Tasks (7 files)
-- [ ] 3.6 `tasks/editorial-review-structure.xml` — update `_bmad` refs → `_smad`
-- [ ] 3.7 `tasks/editorial-review-prose.xml` — update refs
-- [ ] 3.8 `tasks/help.md` — rewrite for SMAD literary context
-- [ ] 3.9 `tasks/review-adversarial-general.xml` — update refs
-- [ ] 3.10 `tasks/shard-doc.xml` — update refs
-- [ ] 3.11 `tasks/workflow.xml` — update refs
-- [ ] 3.12 `tasks/index-docs.xml` — update refs
+- [x] 3.6 `tasks/editorial-review-structure.xml` — update `_bmad` refs → `_smad`
+- [x] 3.7 `tasks/editorial-review-prose.xml` — update refs
+- [x] 3.8 `tasks/help.md` — rewrite for SMAD literary context
+- [x] 3.9 `tasks/review-adversarial-general.xml` — update refs
+- [x] 3.10 `tasks/shard-doc.xml` — update refs
+- [x] 3.11 `tasks/workflow.xml` — update refs
+- [x] 3.12 `tasks/index-docs.xml` — update refs
 
 ### Core Workflows (retain but rebrand)
-- [ ] 3.13 `workflows/party-mode/workflow.md` — update bmad refs → smad
-- [ ] 3.14 `workflows/party-mode/steps/step-01-agent-loading.md` — update refs
-- [ ] 3.15 `workflows/party-mode/steps/step-02-discussion-orchestration.md` — update refs
-- [ ] 3.16 `workflows/party-mode/steps/step-03-graceful-exit.md` — update refs
-- [ ] 3.17 `workflows/brainstorming/workflow.md` — update refs
-- [ ] 3.18 `workflows/brainstorming/steps/step-03-technique-execution.md` — update refs
-- [ ] 3.19 `workflows/advanced-elicitation/workflow.xml` — update refs
+- [x] 3.13 `workflows/party-mode/workflow.md` — update bmad refs → smad
+- [x] 3.14 `workflows/party-mode/steps/step-01-agent-loading.md` — update refs
+- [x] 3.15 `workflows/party-mode/steps/step-02-discussion-orchestration.md` — update refs
+- [x] 3.16 `workflows/party-mode/steps/step-03-graceful-exit.md` — update refs
+- [x] 3.17 `workflows/brainstorming/workflow.md` — update refs
+- [x] 3.18 `workflows/brainstorming/steps/step-03-technique-execution.md` — update refs
+- [x] 3.19 `workflows/advanced-elicitation/workflow.xml` — update refs
 
 ### Utility Components
-- [ ] 3.20 `utility/agent-components/activation-steps.txt` — update bmad refs
-- [ ] 3.21 `utility/agent-components/handler-workflow.txt` — update refs
-- [ ] 3.22 `utility/agent-components/handler-validate-workflow.txt` — update refs
+- [x] 3.20 `utility/agent-components/activation-steps.txt` — update bmad refs
+- [x] 3.21 `utility/agent-components/handler-workflow.txt` — update refs
+- [x] 3.22 `utility/agent-components/handler-validate-workflow.txt` — update refs
 
 ## Phase 4: Create SMM Module Help CSV
-- [ ] 4.1 Create `src/smm/module-help.csv` with all literary workflows mapped to phases
+- [x] 4.1 Create `src/smm/module-help.csv` with all literary workflows mapped to phases
 
 ## Phase 5: Create Literary Teams
-- [ ] 5.1 Create `src/smm/teams/default-party.csv` — literary agent party config
-- [ ] 5.2 Create `src/smm/teams/team-editorial.yaml` — editorial team
+- [x] 5.1 Create `src/smm/teams/default-party.csv` — literary agent party config
+- [x] 5.2 Create `src/smm/teams/team-editorial.yaml` — editorial team
 
 ## Phase 6: Verification
-- [ ] 6.1 Verify no remaining `_bmad` or `bmad` references in src/ content files
-- [ ] 6.2 Verify no remaining `_blad` references anywhere
-- [ ] 6.3 Verify all agent menu workflow paths resolve to existing files
-- [ ] 6.4 Verify all 11 new workflows have content
-- [ ] 6.5 Commit all changes
+- [x] 6.1 Verify no remaining `_bmad` or `bmad` references in src/ content files
+- [x] 6.2 Verify no remaining `_blad` references anywhere
+- [x] 6.3 Verify all agent menu workflow paths resolve to existing files
+- [x] 6.4 Verify all 11 new workflows have content
+- [x] 6.5 Commit all changes
 
 ---
 
