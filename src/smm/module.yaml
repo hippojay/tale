@@ -136,3 +136,5 @@ agents:
   - copy-editor.agent.yaml
   # Publishing
   - publishing-strategist.agent.yaml
+  # Screenwriting
+  - screenwriter.agent.yaml
