@@ -122,6 +122,38 @@
 
 ## Style Guide
 
+### Prose Sophistication: {prose_sophistication}
+
+**This section is the authoritative reference for all writing and enrichment agents. Every chapter, scene, and revision must match this target.**
+
+#### If Accessible
+- Clear, direct sentences. Prioritize forward momentum.
+- Dialogue drives story. Characters speak plainly but distinctly.
+- Emotion shown through action and reaction, not introspection.
+- Description serves pace — lean, purposeful, never lingering.
+
+#### If Polished
+- Varied sentence structure. Mix short punches with longer, rhythmic passages.
+- Dialogue carries subtext — characters don't say exactly what they mean.
+- Emotional layers: surface action + underlying tension + thematic echo.
+- Description earns its place through specificity and sensory grounding.
+- Metaphor used with intention, not decoration.
+
+#### If Literary
+- Prose as instrument — rhythm, sound, and cadence matter as much as meaning.
+- Psychological interiority: characters have contradictory impulses, unexamined motives, self-deception.
+- Dialogue is oblique — what's unsaid carries more weight than what's spoken.
+- Thematic resonance woven through image patterns, not stated directly.
+- Complexity in escalation — events don't simply get worse, they get more morally ambiguous.
+- Description reveals character perception, not objective reality.
+- Resist resolution — let tension sit, let questions linger.
+
+#### If Experimental
+- Language as material — sound, fragment, white space, repetition as structural tools.
+- Conventional narrative logic is optional. Associative, recursive, or fragmented structures welcome.
+- Ambiguity is a feature. The reader participates in meaning-making.
+- Form follows the emotional or thematic logic of the story, not plot mechanics.
+
 ### Narrative Voice
 - **POV:** (First person, third limited, omniscient)
 - **Tense:** (Past, present)
@@ -131,6 +163,12 @@
 - **Dialogue Style:** 
 - **Description Density:** 
 - **Sentence Rhythm:** 
+
+### Comp Authors / Style References
+*List 2-3 authors whose prose style is a reference point for this project:*
+- 
+- 
+- 
 
 ### Character Voice Distinctions
 | Character | Speech Pattern | Vocabulary | Verbal Tics |

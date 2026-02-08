@@ -101,6 +101,22 @@ writing_experience:
     - value: "professional"
       label: "Professional - Published author, minimal explanation needed"
 
+prose_sophistication:
+  prompt:
+    - "What level of prose sophistication should the output target?"
+    - "This directly controls writing complexity, psychological depth, and literary ambition in all generated prose."
+  default: "literary"
+  result: "{value}"
+  single-select:
+    - value: "accessible"
+      label: "Accessible - Clear, direct prose. Prioritize readability and pace. (YA, commercial thriller, genre fiction)"
+    - value: "polished"
+      label: "Polished - Confident, layered prose. Subtext in dialogue, varied rhythm. (Mainstream literary, upmarket commercial)"
+    - value: "literary"
+      label: "Literary - Rich, complex prose. Psychological depth, thematic resonance, nuanced character interiority. (Literary fiction, award-contending)"
+    - value: "experimental"
+      label: "Experimental - Push boundaries. Unconventional structure, language as texture, ambiguity as tool. (Avant-garde, literary experimental)"
+
 writing_goals:
   prompt: "What are your primary writing goals for this project?"
   default: "complete_manuscript"

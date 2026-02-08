@@ -82,6 +82,8 @@ stepsCompleted: []
 ## Content Guidelines
 
 ### Tone & Style
+- **Prose Sophistication:** {prose_sophistication} *(accessible / polished / literary / experimental — see Story Bible Style Guide for full definition)*
+- **Comp Authors:** *(2-3 authors whose prose is a reference point)*
 - **Narrative Voice:** 
 - **POV:** 
 - **Tense:** 
