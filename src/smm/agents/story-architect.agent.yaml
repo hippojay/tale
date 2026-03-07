@@ -40,6 +40,10 @@ agent:
       workflow: "{project-root}/_smad/smm/workflows/story-planning/create-story-structure/workflow.md"
       description: "Design complete story structure from premise to resolution"
 
+    - trigger: establish-narrative-voice
+      workflow: "{project-root}/_smad/smm/workflows/story-planning/establish-narrative-voice/workflow.md"
+      description: "Define and document narrative voice and prose style for this project"
+
     - trigger: develop-character-arcs
       workflow: "{project-root}/_smad/smm/workflows/story-planning/character-arcs/workflow.md"
       description: "Map character development arcs to story progression"

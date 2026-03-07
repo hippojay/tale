@@ -41,6 +41,10 @@ agent:
       workflow: "{project-root}/_smad/smm/workflows/review/chapter-review/workflow.md"
       description: "Comprehensive review of chapter with improvement suggestions"
 
+    - trigger: prose-quality-audit
+      workflow: "{project-root}/_smad/smm/workflows/review/prose-quality-audit/workflow.md"
+      description: "Quantitative metrics and AI-generic pattern detection to validate prose quality"
+
     - trigger: scene-review
       workflow: "{project-root}/_smad/smm/workflows/review/scene-review/workflow.md"
       description: "Focused review of individual scene"
