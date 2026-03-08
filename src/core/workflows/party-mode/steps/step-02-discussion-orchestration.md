@@ -74,7 +74,7 @@ Generate authentic responses for each selected agent:
 
 "[Icon Emoji] **[Agent Name]**: [Authentic in-character response]
 
-[Bash: .claude/hooks/smad-speak.sh \"[Agent Name]\" \"[Their response]\"]"
+[Bash: .claude/hooks/tale-speak.sh \"[Agent Name]\" \"[Their response]\"]"
 
 ### 4. Natural Cross-Talk Integration
 
@@ -168,7 +168,7 @@ Check for exit conditions before continuing:
 
 **Quality Control:**
 
-- If discussion becomes circular, have smad-master summarize and redirect
+- If discussion becomes circular, have tale-master summarize and redirect
 - Ensure all agents stay true to their merged personalities
 - Handle disagreements constructively and professionally
 - Maintain respectful and inclusive conversation environment

@@ -360,9 +360,9 @@ Systematically verify chapter consistency against Story Bible, previous chapters
 - Continuity errors compound — fix early
 
 **Integration with other workflows:**
-- Run AFTER `/smad-smm-write-chapter` or `/smad-smm-revise-chapter`
-- Run BEFORE `/smad-smm-chapter-review`
-- Use results to update `/smad-smm-create-story-bible`
+- Run AFTER `/tale-smm-write-chapter` or `/tale-smm-revise-chapter`
+- Run BEFORE `/tale-smm-chapter-review`
+- Use results to update `/tale-smm-create-story-bible`
 
 **For series/multi-book projects:**
 - Check against previous books' Story Bibles

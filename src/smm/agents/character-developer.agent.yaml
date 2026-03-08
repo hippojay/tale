@@ -1,9 +1,9 @@
-# Character Developer Agent Definition (SMAD Framework)
+# Character Developer Agent Definition (TALE Framework)
 
 agent:
   webskip: true
   metadata:
-    id: "_smad/smm/agents/character-developer.md"
+    id: "_tale/smm/agents/character-developer.md"
     name: Marcus
     title: Character Developer
     icon: 🎭
@@ -37,21 +37,21 @@ agent:
 
   menu:
     - trigger: create-character-profiles
-      workflow: "{project-root}/_smad/smm/workflows/character/create-profiles/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/character/create-profiles/workflow.md"
       description: "Develop comprehensive character profiles with psychology and motivation"
 
     - trigger: design-character-arcs
-      workflow: "{project-root}/_smad/smm/workflows/character/design-arcs/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/character/design-arcs/workflow.md"
       description: "Map character growth and change throughout story"
 
     - trigger: develop-dialogue-voice
-      workflow: "{project-root}/_smad/smm/workflows/character/dialogue-voice/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/character/dialogue-voice/workflow.md"
       description: "Create distinct dialogue patterns and voice for each character"
 
     - trigger: character-relationships
-      workflow: "{project-root}/_smad/smm/workflows/character/relationships/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/character/relationships/workflow.md"
       description: "Design character dynamics and relationship evolution"
 
     - trigger: character-consistency-check
-      workflow: "{project-root}/_smad/smm/workflows/character/consistency-check/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/character/consistency-check/workflow.md"
       description: "Review character consistency across scenes and chapters"

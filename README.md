@@ -1,159 +1,449 @@
-![BMad Method](banner-bmad-method.png)
+# TALE
 
-[![Version](https://img.shields.io/npm/v/bmad-method?color=blue&label=version)](https://www.npmjs.com/package/bmad-method)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Node.js Version](https://img.shields.io/badge/node-%3E%3D20.0.0-brightgreen)](https://nodejs.org)
-[![Discord](https://img.shields.io/badge/Discord-Join%20Community-7289da?logo=discord&logoColor=white)](https://discord.gg/gk8jAdXWmj)
+**The Author's Literary Engine** — An AI-driven literary development framework with 12 specialized agents, 60+ guided workflows, and adaptive intelligence that adjusts from short stories to epic novels.
 
-**Breakthrough Method of Agile AI Driven Development** — An AI-driven agile development framework with 21 specialized agents, 50+ guided workflows, and scale-adaptive intelligence that adjusts from bug fixes to enterprise systems.
+Built on the proven [BMAD Method](https://github.com/bmad-code-org/BMAD-METHOD) framework for software development, TALE adapts BMAD's agent-based workflow orchestration, party mode collaboration, and structured elicitation techniques to the literary domain.
 
-**100% free and open source.** No paywalls. No gated content. No gated Discord. We believe in empowering everyone, not just those who can pay.
+TALE transforms the writing process from blank page to polished manuscript through structured collaboration with expert AI agents who guide you through planning, writing, enrichment, review, editing, and publishing.
 
-## Why BMad?
+## Why TALE?
 
-Traditional AI tools do the thinking for you, producing average results. BMad agents and facilitated workflow act as expert collaborators who guide you through a structured process to bring out your best thinking in partnership with the AI.
+Traditional AI writing tools generate content for you, producing generic results. TALE inherits BMAD's philosophy: agents act as expert collaborators who guide you through a structured creative process to bring out your best writing in partnership with AI, not replacement by AI.
 
-- **AI Intelligent Help**: Brand new for beta - AI assisted help will guide you from the beginning to the end - just ask for `/bmad-help` after you have installed BMad to your project
-- **Scale-Domain-Adaptive**: Automatically adjusts planning depth and needs based on project complexity, domain and type - a SaaS Mobile Dating App has different planning needs from a diagnostic medical system, BMad adapts and helps you along the way
-- **Structured Workflows**: Grounded in agile best practices across analysis, planning, architecture, and implementation
-- **Specialized Agents**: 12+ domain experts (PM, Architect, Developer, UX, Scrum Master, and more)
-- **Party Mode**: Bring multiple agent personas into one session to plan, troubleshoot, or discuss your project collaboratively, multiple perspectives with maximum fun
-- **Complete Lifecycle**: From brainstorming to deployment, BMad is there with you every step of the way
+- **AI Intelligent Help**: `/tale-help` guides you from beginning to end, adapting advice based on your project stage
+- **Genre-Adaptive**: Automatically adjusts guidance based on your genre, prose sophistication level, and writing experience
+- **Structured Workflows**: Grounded in literary best practices across planning, writing, editing, and publishing
+- **Specialized Agents**: 12 domain experts (Story Architect, Character Developer, Ghost Writer, Developmental Editor, and more)
+- **Party Mode**: Inherited from BMAD — bring multiple agent personas into one session to brainstorm, troubleshoot, or discuss your project collaboratively
+- **Complete Lifecycle**: From concept to publication, TALE is there with you every step of the way
 
 ## Quick Start
 
-**Prerequisites**: [Node.js](https://nodejs.org) v20+
+**Prerequisites**: Kiro CLI with TALE installed
 
-```bash
-npx bmad-method install
+Open Kiro CLI in your writing project directory and start with:
+
+```
+/tale-help
 ```
 
-Follow the installer prompts, then open your AI IDE (Claude Code, Cursor, Windsurf, etc.) in the project folder.
+This tells you exactly what's next based on your project stage and what modules you have installed.
 
-**Non-Interactive Installation**: For CI/CD pipelines or automated deployments, use command-line flags:
+### Fast Path (Short Works)
 
-```bash
-npx bmad-method install --directory /path/to/project --modules bmm --tools claude-code --yes
-```
+For short stories, novellas, or clear concepts — 4 core workflows:
 
-See [Non-Interactive Installation Guide](docs/non-interactive-installation.md) for all available options.
+1. `/tale-smm-create-srd` — Story Requirements Document (your foundation)
+2. `/tale-smm-chapter-planning` — Detailed chapter/scene outlines
+3. `/tale-smm-write-chapter` — Write each chapter (repeat as needed)
+4. `/tale-smm-chapter-review` — Review and validate quality
 
-> **Not sure what to do?** Run `/bmad-help` — it tells you exactly what's next and what's optional. You can also ask it questions like:
+### Full Planning Path (Novels & Complex Works)
 
- - `/bmad-help How should I build a web app for my TShirt Business that can scale to millions?`
- - `/bmad-help I just finished the architecture, I am not sure what to do next`
+For novels, series, or complex narratives — comprehensive planning then write:
 
-And the amazing thing is BMad Help evolves depending on what modules you install also!
- - `/bmad-help Im interested in really exploring creative ways to demo BMad at work, what do you recommend to help plan a great slide deck and compelling narrative?`, and if you have the Creative Intelligence Suite installed, it will offer you different or complimentary advice than if you just have BMad Method Module installed!
+1. `/tale-smm-create-srd` — Define premise, themes, and story goals
+2. `/tale-smm-create-story-bible` — Single source of truth for continuity
+3. `/tale-smm-create-story-structure` — Three-act structure with turning points
+4. `/tale-smm-create-profiles` — Develop character profiles and psychology
+5. `/tale-smm-chapter-planning` — Chapter-by-chapter outline with beats
+6. **Repeat per chapter:** `/tale-smm-write-chapter` → `/tale-smm-enrich-chapter` → `/tale-smm-chapter-review` → `/tale-smm-revise-chapter` (if needed)
+7. **Editorial pass:** `/tale-smm-manuscript-evaluation` → `/tale-smm-structure-analysis` → `/tale-smm-pacing-review`
+8. **Polish:** `/tale-smm-chapter-edit` (line editing) → `/tale-smm-prose-polish` → `/tale-smm-final-proof`
 
-The workflows below show the fastest path to working code. You can also load agents directly for a more structured process, extensive planning, or to learn about agile development practices — the agents guide you with menus, explanations, and elicitation at each step.
+Every workflow tells you what's next. Optional phases (world-building, character arcs, publishing strategy) are available when you need them — ask `/tale-help` anytime.
 
-### Simple Path (Quick Flow)
+## The Agents
 
-Bug fixes, small features, clear scope — 3 commands - 1 Optional Agent:
+TALE provides 12 specialized literary agents organized by function:
 
-1. `/quick-spec` — analyzes your codebase and produces a tech-spec with stories
-2. `/dev-story` — implements each story
-3. `/code-review` — validates quality
+### Story Development
 
-### Full Planning Path (BMad Method)
+**Elena — Story Architect** 📚
+- Master story structure and narrative design
+- Three-act frameworks, plot arcs, pacing
+- Workflows: Create Story Structure, Chapter Planning, Character Arcs, Genre Compliance, Pacing Analysis
 
-Products, platforms, complex features — structured planning then build:
+**Marcus — Character Developer** 🎭
+- Character psychology, motivation, and growth
+- Dialogue voice and relationship dynamics
+- Workflows: Create Character Profiles, Design Character Arcs, Dialogue Voice, Character Relationships, Consistency Check
 
-1. `/product-brief` — define problem, users, and MVP scope
-2. `/create-prd` — full requirements with personas, metrics, and risks
-3. `/create-architecture` — technical decisions and system design
-4. `/create-epics-and-stories` — break work into prioritized stories
-5. `/sprint-planning` — initialize sprint tracking
-6. **Repeat per story:** `/create-story` → `/dev-story` → `/code-review`
+**Theodore — World Builder** 🌍
+- World-building, cultures, magic systems
+- Location detail and continuity
+- Workflows: Create World, Develop Culture, Magic System, Location Detail, World Consistency
 
-Every step tells you what's next. Optional phases (brainstorming, research, UX design) are available when you need them — ask `/bmad-help` anytime. For a detailed walkthrough, see the [Getting Started Tutorial](http://docs.bmad-method.org/tutorials/getting-started/).
+### Writing Production
 
-## Modules
+**Marcus — Ghost Writer** ✍️
+- Chapter and scene writing from outlines
+- Voice matching and narrative consistency
+- Workflows: Write Chapter, Write Scene, Revise Chapter, Voice Matching, Expand Scene
 
-BMad Method extends with official modules for specialized domains. Modules are available during installation and can be added to your project at any time. After the V6 beta period these will also be available as Plugins and Granular Skills.
+**Vivian — Narrative Enrichment Specialist** 🎨
+- Descriptive depth and sensory detail
+- Atmosphere, mood, and character presence
+- Workflows: Enrich Chapter, Worldbuild Scene, Enhance Atmosphere, Sensory Audit, Character Presence
 
-| Module                                | GitHub                                                                                                                            | NPM                                                                                                | Purpose                                                               |
-| ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| **BMad Method (BMM)**                 | [bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD)                                                         | [bmad-method](https://www.npmjs.com/package/bmad-method)                                           | Core framework with 34+ workflows across 4 development phases         |
-| **BMad Builder (BMB)**                | [bmad-code-org/bmad-builder](https://github.com/bmad-code-org/bmad-builder)                                                       | [bmad-builder](https://www.npmjs.com/package/bmad-builder)                                         | Create custom BMad agents, workflows, and domain-specific modules     |
-| **Test Architect (TEA)** 🆕            | [bmad-code-org/tea](https://github.com/bmad-code-org/bmad-method-test-architecture-enterprise)                                    | [tea](https://www.npmjs.com/package/bmad-method-test-architecture-enterprise)                      | Risk-based test strategy, automation, and release gates (8 workflows) |
-| **Game Dev Studio (BMGD)**            | [bmad-code-org/bmad-module-game-dev-studio](https://github.com/bmad-code-org/bmad-module-game-dev-studio)                         | [bmad-game-dev-studio](https://www.npmjs.com/package/bmad-game-dev-studio)                         | Game development workflows for Unity, Unreal, and Godot               |
-| **Creative Intelligence Suite (CIS)** | [bmad-code-org/bmad-module-creative-intelligence-suite](https://github.com/bmad-code-org/bmad-module-creative-intelligence-suite) | [bmad-creative-intelligence-suite](https://www.npmjs.com/package/bmad-creative-intelligence-suite) | Innovation, brainstorming, design thinking, and problem-solving       |
+### Review & Quality Assurance
 
-* More modules are coming in the next 2 weeks from BMad Official, and a community marketplace for the installer also will be coming with the final V6 release!
+**James — Story Reviewer** 🔍
+- Chapter and scene review
+- Continuity, reader experience, improvement roadmaps
+- Workflows: Chapter Review, Scene Review, Dialogue Review, Continuity Check, Reader Experience, Improvement Roadmap
 
-## Testing Agents
+### Editorial
 
-BMad provides two testing options to fit your needs:
+**Sarah — Developmental Editor** ✏️
+- Big-picture manuscript evaluation
+- Structure, pacing, opening critique
+- Workflows: Manuscript Evaluation, Structure Analysis, Pacing Review, Opening Critique, Revision Roadmap
 
-### Quinn (QA) - Built-in
+**Catherine — Line Editor** ✂️
+- Sentence-level prose refinement
+- Rhythm, dialogue tightening, description refinement
+- Workflows: Chapter Edit, Prose Polish, Dialogue Tightening, Description Refinement, Rhythm Analysis
 
-**Quick test automation for rapid coverage**
+**Patricia — Copy Editor** 📝
+- Grammar, consistency, fact-checking
+- Style sheets and final proofing
+- Workflows: Chapter Edit, Style Sheet, Consistency Pass, Fact Check, Final Proof
 
-- ✅ **Always available** in BMM module (no separate install)
-- ✅ **Simple**: One workflow (`QA` - Automate)
-- ✅ **Beginner-friendly**: Standard test framework patterns
-- ✅ **Fast**: Generate tests and ship
+### Publishing
 
-**Use Quinn for:** Small projects, quick coverage, standard patterns
+**Alexandra — Publishing Strategist** 📈
+- Market analysis and publishing paths
+- Query letters, synopses, launch planning
+- Workflows: Market Analysis, Query Letter, Synopsis, Publishing Path, Launch Plan
 
-### Test Architect (TEA) - Optional Module
+### Screenwriting
 
-**Enterprise-grade test strategy and quality engineering**
+**Oliver — Screenwriter** 🎬
+- Screenplay adaptation and formatting
+- Scene writing in screenplay format
+- Workflows: Adapt to Screenplay, Write Screenplay, Write Scene, Beat Sheet, Treatment
 
-- 🆕 **Standalone module** (install separately)
-- 🏗️ **Comprehensive**: 8 workflows covering full test lifecycle
-- 🎯 **Advanced**: Risk-based planning, quality gates, NFR assessment
-- 📚 **Knowledge-driven**: 34 testing patterns and best practices
-- 📖 [Test Architect Documentation](https://bmad-code-org.github.io/bmad-method-test-architecture-enterprise/)
+### Orchestration
 
-**Use TEA for:** Enterprise projects, test strategy, compliance, release gates
+**TALE Master** 🎯
+- Workflow orchestration and knowledge custodian
+- Party mode facilitation and advanced elicitation
+- Available for any complex multi-agent coordination
 
----
+## Workflow Phases
 
-## Documentation
+TALE organizes workflows into 5 phases that mirror the writing lifecycle:
 
-**[BMad Documentation](http://docs.bmad-method.org)** — Tutorials, how-to guides, concepts, and reference
-**[Test Architect Documentation](https://bmad-code-org.github.io/bmad-method-test-architecture-enterprise/)** — TEA standalone module documentation
+### Phase 1: Planning (19 workflows)
 
-- [Getting Started Tutorial](http://docs.bmad-method.org/tutorials/getting-started/)
-- [Upgrading from Previous Versions](http://docs.bmad-method.org/how-to/upgrade-to-v6/)
-- [Test Architect Migration Guide](https://bmad-code-org.github.io/bmad-method-test-architecture-enterprise/migration/) — Upgrading from BMM-embedded TEA
+**Story Planning** — Foundation documents and structure
+- Create SRD (Story Requirements Document) — *required*
+- Create Story Bible — Single source of truth
+- Create Story Structure — Three-act framework
+- Chapter Planning — Detailed outlines
+- Character Arcs — Map growth to plot
+- Genre Compliance — Validate genre expectations
 
-### For v4 Users
+**Character Development** — Psychology and relationships
+- Create Character Profiles
+- Design Character Arcs
+- Dialogue Voice
+- Character Relationships
+- Character Consistency Check
 
-- **[v4 Documentation](https://github.com/bmad-code-org/BMAD-METHOD/tree/V4/docs)**
-- If you need to install V4, you can do this with  `npx bmad-method@4.44.3 install` - similar for any past version.
+**World Building** — Settings and systems
+- Create World
+- Develop Culture
+- Magic System
+- Location Detail
+- World Consistency Check
 
-## Community
+**Story Architecture** — Analysis and optimization
+- Pacing Analysis
+- Structure Analysis
 
-- [Discord](https://discord.gg/gk8jAdXWmj) — Get help, share ideas, collaborate
-- [Subscribe on YouTube](https://www.youtube.com/@BMadCode) — Tutorials, master class, and podcast (launching Feb 2025)
-- [GitHub Issues](https://github.com/bmad-code-org/BMAD-METHOD/issues) — Bug reports and feature requests
-- [Discussions](https://github.com/bmad-code-org/BMAD-METHOD/discussions) — Community conversations
+### Phase 2: Writing (15 workflows)
 
-## Support BMad
+**Writing Production** — Draft creation
+- Write Chapter — *core workflow*
+- Write Scene
+- Revise Chapter
+- Voice Matching
+- Expand Scene
 
-BMad is free for everyone — and always will be. If you'd like to support development:
+**Narrative Enrichment** — Depth and immersion
+- Enrich Chapter
+- Worldbuild Scene
+- Enhance Atmosphere
+- Sensory Audit
+- Character Presence
 
-- ⭐ Please click the star project icon near the top right of this page
-- ☕ [Buy Me a Coffee](https://buymeacoffee.com/bmad) — Fuel the development
-- 🏢 Corporate sponsorship — DM on Discord
-- 🎤 Speaking & Media — Available for conferences, podcasts, interviews (BM on Discord)
+### Phase 3: Review (12 workflows)
 
-## Contributing
+**Story Review** — Quality assurance
+- Chapter Review
+- Scene Review
+- Dialogue Review
+- Continuity Check
+- Reader Experience
+- Improvement Roadmap
 
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+**Developmental Editing** — Big-picture evaluation
+- Manuscript Evaluation
+- Structure Analysis
+- Pacing Review
+- Opening Critique
+- Revision Roadmap
+- Theme Analysis
+
+### Phase 4: Polish (13 workflows)
+
+**Line Editing** — Sentence-level refinement
+- Chapter Edit
+- Prose Polish
+- Dialogue Tightening
+- Description Refinement
+- Rhythm Analysis
+
+**Copy Editing** — Grammar and consistency
+- Chapter Edit
+- Style Sheet
+- Consistency Pass
+- Fact Check
+- Final Proof
+
+### Phase 5: Publishing (5 workflows)
+
+**Publishing Strategy** — Market and launch
+- Market Analysis
+- Query Letter
+- Synopsis
+- Publishing Path
+- Launch Plan
+
+### Anytime Workflows
+
+**Core Utilities** — Available at any stage
+- `/tale-help` — Get unstuck, see what's next
+- `/tale-brainstorming` — Generate ideas through interactive techniques
+- `/tale-party-mode` — Multi-agent collaborative discussions
+- `/tale-index-docs` — Create lightweight doc index for LLM scanning
+- `/tale-shard-doc` — Split large documents into manageable sections
+
+## Prose Sophistication System
+
+TALE adapts writing output to your target audience and literary ambition through four sophistication levels:
+
+**Accessible** — Clear, direct prose. Prioritize readability and pace.
+- Best for: YA, commercial thriller, genre fiction
+- Focus: Plot momentum, clear character motivation, straightforward language
+
+**Polished** — Confident, layered prose. Subtext in dialogue, varied rhythm.
+- Best for: Mainstream literary, upmarket commercial
+- Focus: Balanced depth, sophisticated but accessible, strong voice
+
+**Literary** — Rich, complex prose. Psychological depth, thematic resonance.
+- Best for: Literary fiction, award-contending work
+- Focus: Character interiority, nuanced themes, artistic language
+
+**Experimental** — Push boundaries. Unconventional structure, language as texture.
+- Best for: Avant-garde, literary experimental
+- Focus: Form innovation, ambiguity as tool, challenging conventions
+
+Set your prose sophistication level during project configuration. All agents adapt their output accordingly.
+
+## Project Configuration
+
+TALE collects key project details during setup to personalize agent guidance:
+
+**Core Settings** (from TALE Core)
+- User name — What agents call you
+- Communication language — Agent conversation language
+- Document output language — Generated document language
+- Output folder — Where files are saved (default: `_tale-output`)
+
+**Project Settings** (from SMM Module)
+- Project title
+- Project type — Novel, novella, short story, non-fiction, screenplay, stage play
+- Primary genre — Literary fiction, commercial fiction, romance, mystery, sci-fi, fantasy, historical, YA, memoir, biography, self-help, other
+- Target word count — 5k to 100k+ words
+- Writing experience — Beginner, intermediate, experienced, professional
+- Prose sophistication — Accessible, polished, literary, experimental
+- Writing goals — Complete manuscript, improve craft, traditional publishing, self-publishing, personal satisfaction, build platform, contest submission
+
+These settings inform agent behavior, workflow recommendations, and output style.
+
+## Key Artifacts
+
+TALE workflows produce structured documents that guide your writing:
+
+**Story Requirements Document (SRD)** — Foundation document
+- Premise, themes, target audience
+- Story goals and success criteria
+- Genre expectations and constraints
+- Created by: Story Architect
+
+**Story Bible** — Single source of truth
+- Characters, world, timeline
+- Continuity and consistency reference
+- Living document updated throughout project
+- Created by: Story Architect
+
+**Story Structure** — Narrative architecture
+- Three-act structure with turning points
+- Plot progression and character arcs
+- Scene sequences and dramatic beats
+- Created by: Story Architect
+
+**Chapter Outlines** — Detailed scene plans
+- Chapter objectives and conflicts
+- Scene beats and character goals
+- Pacing notes and cliffhangers
+- Created by: Story Architect
+
+**Character Profiles** — Psychology and motivation
+- Background, personality, desires
+- Internal and external conflicts
+- Dialogue voice and mannerisms
+- Created by: Character Developer
+
+**Manuscript Chapters** — Your actual prose
+- Written from outlines and story beats
+- Enriched with sensory detail and atmosphere
+- Reviewed and revised through editorial passes
+- Created by: Ghost Writer, Narrative Enrichment
+
+**Editorial Reports** — Quality assessments
+- Manuscript evaluation and structure analysis
+- Pacing review and improvement roadmaps
+- Chapter reviews and revision guidance
+- Created by: Developmental Editor, Story Reviewer
+
+## Party Mode
+
+Party Mode brings multiple TALE agents into one collaborative session for dynamic multi-perspective discussions.
+
+**Use Party Mode for:**
+- Brainstorming story concepts with diverse agent perspectives
+- Troubleshooting plot problems with Story Architect, Character Developer, and Developmental Editor
+- Discussing character arcs with Character Developer and Story Reviewer
+- Planning publishing strategy with Publishing Strategist and Developmental Editor
+- Any situation where multiple expert viewpoints add value
+
+**How it works:**
+1. Run `/tale-party-mode`
+2. All installed TALE agents load into the session
+3. Agents introduce themselves and their expertise
+4. You guide the discussion — agents respond in character with their unique perspectives
+5. Agents can build on each other's ideas and debate approaches
+6. Session concludes with synthesis and next steps
+
+Party Mode maintains each agent's personality, expertise, and communication style while enabling natural collaborative conversation.
+
+## Advanced Features
+
+**Advanced Elicitation** — Deep requirements gathering (from BMAD Core)
+- Triggered automatically when workflows need more information
+- Socratic questioning to uncover unstated needs
+- Helps clarify vision when you're uncertain
+
+**Brainstorming** — Structured ideation (from BMAD Core)
+- Multiple techniques: mind mapping, SCAMPER, reverse thinking, random word association
+- Interactive facilitation with follow-up questions
+- Captures and organizes ideas for later use
+
+**Document Sharding** — Manage large files
+- Split manuscripts into manageable sections
+- Maintain navigation and structure
+- Useful when chapters exceed 500 lines
+
+**Document Indexing** — Quick LLM scanning
+- Create lightweight index of available documents
+- Help agents understand project structure without loading everything
+- Speeds up context gathering
+
+## Typical Workflow Sequence
+
+Here's how a novel project typically flows through TALE:
+
+**Week 1-2: Foundation**
+1. Create SRD — Define premise, themes, audience
+2. Create Story Bible — Establish world and characters
+3. Create Story Structure — Map three-act framework
+4. Create Character Profiles — Develop main characters
+
+**Week 3-4: Detailed Planning**
+5. Chapter Planning — Outline all chapters with beats
+6. Character Arcs — Map growth to plot progression
+7. World Building (if needed) — Develop cultures, magic systems, locations
+
+**Months 2-6: Writing Production** (repeat per chapter)
+8. Write Chapter — Draft from outline
+9. Enrich Chapter — Add sensory detail and atmosphere
+10. Chapter Review — Quality check and continuity
+11. Revise Chapter (if needed) — Address review feedback
+
+**Month 7: Developmental Edit**
+12. Manuscript Evaluation — Big-picture assessment
+13. Structure Analysis — Plot architecture review
+14. Pacing Review — Rhythm and flow optimization
+15. Revision Roadmap — Prioritized improvement plan
+
+**Month 8: Line Editing**
+16. Chapter Edit (all chapters) — Sentence-level refinement
+17. Prose Polish — Enhance language and rhythm
+18. Dialogue Tightening — Sharpen conversations
+
+**Month 9: Copy Editing**
+19. Style Sheet — Establish consistency rules
+20. Consistency Pass — Apply style sheet
+21. Fact Check — Verify accuracy
+22. Final Proof — Last grammar and typo pass
+
+**Month 10: Publishing Prep**
+23. Market Analysis — Identify target market and comps
+24. Query Letter — Craft compelling pitch
+25. Synopsis — Write 1-2 page summary
+26. Publishing Path — Choose traditional vs. self-publishing
+27. Launch Plan — Marketing and release strategy
+
+This timeline is illustrative — your pace will vary based on project scope, writing experience, and available time.
+
+## Tips for Success
+
+**Start with the SRD** — Don't skip the Story Requirements Document. It's your foundation and prevents costly rewrites later.
+
+**Use the Story Bible** — Keep it updated as your world and characters evolve. It's your continuity lifeline.
+
+**Follow the phases** — Planning → Writing → Review → Polish → Publishing. Skipping phases creates problems downstream.
+
+**Iterate per chapter** — Write → Enrich → Review → Revise. This cycle produces higher quality drafts.
+
+**Ask for help** — Use `/tale-help` whenever you're stuck or unsure what's next.
+
+**Leverage Party Mode** — Multiple agent perspectives solve problems faster than solo work.
+
+**Match prose sophistication to genre** — YA readers expect different prose than literary fiction readers. Set your level appropriately.
+
+**Trust the process** — TALE's structure exists because it works. Resist the urge to skip steps.
+
+**Commit to revision** — First drafts are never final. Plan for multiple editorial passes.
+
+**Know your goals** — Traditional publishing requires different prep than self-publishing. Set goals early.
+
+## Community & Support
+
+- **Discord** — Get help, share progress, collaborate with other TALE users
+- **GitHub Issues** — Bug reports and feature requests
+- **Discussions** — Community conversations and tips
 
 ## License
 
-MIT License — see [LICENSE](LICENSE) for details.
+MIT License — see LICENSE for details.
 
 ---
 
-**BMad** and **BMAD-METHOD** are trademarks of BMad Code, LLC. See [TRADEMARK.md](TRADEMARK.md) for details.
+**TALE Method** is built on the [BMAD Method](https://github.com/bmad-code-org/BMAD-METHOD) framework, adapting its proven agent orchestration, workflow engine, and collaborative intelligence system from software development to literary creation. Part of the BMad Code ecosystem.
 
-[![Contributors](https://contrib.rocks/image?repo=bmad-code-org/BMAD-METHOD)](https://github.com/bmad-code-org/BMAD-METHOD/graphs/contributors)
-
-See [CONTRIBUTORS.md](CONTRIBUTORS.md) for contributor information.
+Built for writers who want AI collaboration, not AI replacement.

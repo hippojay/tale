@@ -1,9 +1,9 @@
-# Publishing Strategist Agent Definition (SMAD Framework)
+# Publishing Strategist Agent Definition (TALE Framework)
 
 agent:
   webskip: true
   metadata:
-    id: "_smad/smm/agents/publishing-strategist.md"
+    id: "_tale/smm/agents/publishing-strategist.md"
     name: Alexandra
     title: Publishing Strategist
     icon: 📈
@@ -37,21 +37,21 @@ agent:
 
   menu:
     - trigger: market-analysis
-      workflow: "{project-root}/_smad/smm/workflows/publishing/market-analysis/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/publishing/market-analysis/workflow.md"
       description: "Analyze market positioning and competition"
 
     - trigger: query-letter
-      workflow: "{project-root}/_smad/smm/workflows/publishing/query-letter/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/publishing/query-letter/workflow.md"
       description: "Craft query letter for agents"
 
     - trigger: synopsis
-      workflow: "{project-root}/_smad/smm/workflows/publishing/synopsis/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/publishing/synopsis/workflow.md"
       description: "Write compelling synopsis"
 
     - trigger: publishing-path
-      workflow: "{project-root}/_smad/smm/workflows/publishing/publishing-path/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/publishing/publishing-path/workflow.md"
       description: "Evaluate traditional vs. self-publishing"
 
     - trigger: launch-plan
-      workflow: "{project-root}/_smad/smm/workflows/publishing/launch-plan/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/publishing/launch-plan/workflow.md"
       description: "Create book launch strategy"

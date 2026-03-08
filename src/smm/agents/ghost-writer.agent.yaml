@@ -1,9 +1,9 @@
-# Ghost Writer Agent Definition (SMAD Framework)
+# Ghost Writer Agent Definition (TALE Framework)
 
 agent:
   webskip: true
   metadata:
-    id: "_smad/smm/agents/ghost-writer.md"
+    id: "_tale/smm/agents/ghost-writer.md"
     name: Marcus
     title: Ghost Writer
     icon: ✍️
@@ -43,21 +43,21 @@ agent:
 
   menu:
     - trigger: write-chapter
-      workflow: "{project-root}/_smad/smm/workflows/writing/write-chapter/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/writing/write-chapter/workflow.md"
       description: "Write complete chapter from outline and story beats"
 
     - trigger: write-scene
-      workflow: "{project-root}/_smad/smm/workflows/writing/write-scene/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/writing/write-scene/workflow.md"
       description: "Write individual scene with specific objectives"
 
     - trigger: revise-chapter
-      workflow: "{project-root}/_smad/smm/workflows/writing/revise-chapter/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/writing/revise-chapter/workflow.md"
       description: "Revise existing chapter based on editorial feedback"
 
     - trigger: match-voice
-      workflow: "{project-root}/_smad/smm/workflows/writing/voice-matching/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/writing/voice-matching/workflow.md"
       description: "Analyze and match established narrative voice"
 
     - trigger: expand-scene
-      workflow: "{project-root}/_smad/smm/workflows/writing/expand-scene/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/writing/expand-scene/workflow.md"
       description: "Expand thin or rushed scene with more detail and depth"

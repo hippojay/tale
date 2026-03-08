@@ -1,9 +1,9 @@
-# Copy Editor Agent Definition (SMAD Framework)
+# Copy Editor Agent Definition (TALE Framework)
 
 agent:
   webskip: true
   metadata:
-    id: "_smad/smm/agents/copy-editor.md"
+    id: "_tale/smm/agents/copy-editor.md"
     name: Patricia
     title: Copy Editor
     icon: 📝
@@ -36,21 +36,21 @@ agent:
 
   menu:
     - trigger: copy-edit-chapter
-      workflow: "{project-root}/_smad/smm/workflows/copy-editing/chapter-edit/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/copy-editing/chapter-edit/workflow.md"
       description: "Complete copy edit of chapter"
 
     - trigger: consistency-pass
-      workflow: "{project-root}/_smad/smm/workflows/copy-editing/consistency-pass/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/copy-editing/consistency-pass/workflow.md"
       description: "Check consistency across manuscript"
 
     - trigger: fact-check
-      workflow: "{project-root}/_smad/smm/workflows/copy-editing/fact-check/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/copy-editing/fact-check/workflow.md"
       description: "Verify facts and references"
 
     - trigger: style-sheet
-      workflow: "{project-root}/_smad/smm/workflows/copy-editing/style-sheet/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/copy-editing/style-sheet/workflow.md"
       description: "Create manuscript style sheet"
 
     - trigger: final-proof
-      workflow: "{project-root}/_smad/smm/workflows/copy-editing/final-proof/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/copy-editing/final-proof/workflow.md"
       description: "Final proofread before publication"

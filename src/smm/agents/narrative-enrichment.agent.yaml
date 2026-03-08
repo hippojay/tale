@@ -1,9 +1,9 @@
-# Narrative Enrichment Specialist Agent Definition (SMAD Framework)
+# Narrative Enrichment Specialist Agent Definition (TALE Framework)
 
 agent:
   webskip: true
   metadata:
-    id: "_smad/smm/agents/narrative-enrichment.md"
+    id: "_tale/smm/agents/narrative-enrichment.md"
     name: Vivian
     title: Narrative Enrichment Specialist
     icon: 🎨
@@ -42,21 +42,21 @@ agent:
 
   menu:
     - trigger: enrich-chapter
-      workflow: "{project-root}/_smad/smm/workflows/enrichment/enrich-chapter/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/enrichment/enrich-chapter/workflow.md"
       description: "Add descriptive depth and sensory detail to chapter"
 
     - trigger: worldbuild-scene
-      workflow: "{project-root}/_smad/smm/workflows/enrichment/worldbuild-scene/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/enrichment/worldbuild-scene/workflow.md"
       description: "Deepen world immersion in specific scene"
 
     - trigger: enhance-atmosphere
-      workflow: "{project-root}/_smad/smm/workflows/enrichment/enhance-atmosphere/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/enrichment/enhance-atmosphere/workflow.md"
       description: "Strengthen mood and atmospheric elements"
 
     - trigger: sensory-audit
-      workflow: "{project-root}/_smad/smm/workflows/enrichment/sensory-audit/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/enrichment/sensory-audit/workflow.md"
       description: "Audit and balance sensory engagement across chapter"
 
     - trigger: character-presence
-      workflow: "{project-root}/_smad/smm/workflows/enrichment/character-presence/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/enrichment/character-presence/workflow.md"
       description: "Enhance character physical and emotional presence"

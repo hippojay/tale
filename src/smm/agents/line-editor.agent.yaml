@@ -1,9 +1,9 @@
-# Line Editor Agent Definition (SMAD Framework)
+# Line Editor Agent Definition (TALE Framework)
 
 agent:
   webskip: true
   metadata:
-    id: "_smad/smm/agents/line-editor.md"
+    id: "_tale/smm/agents/line-editor.md"
     name: Catherine
     title: Line Editor
     icon: ✂️
@@ -36,21 +36,21 @@ agent:
 
   menu:
     - trigger: line-edit-chapter
-      workflow: "{project-root}/_smad/smm/workflows/line-editing/chapter-edit/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/line-editing/chapter-edit/workflow.md"
       description: "Complete line edit of chapter"
 
     - trigger: prose-polish
-      workflow: "{project-root}/_smad/smm/workflows/line-editing/prose-polish/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/line-editing/prose-polish/workflow.md"
       description: "Polish prose for publication readiness"
 
     - trigger: dialogue-tightening
-      workflow: "{project-root}/_smad/smm/workflows/line-editing/dialogue-tightening/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/line-editing/dialogue-tightening/workflow.md"
       description: "Tighten and sharpen dialogue"
 
     - trigger: description-refinement
-      workflow: "{project-root}/_smad/smm/workflows/line-editing/description-refinement/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/line-editing/description-refinement/workflow.md"
       description: "Refine descriptive passages"
 
     - trigger: rhythm-analysis
-      workflow: "{project-root}/_smad/smm/workflows/line-editing/rhythm-analysis/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/line-editing/rhythm-analysis/workflow.md"
       description: "Analyze and improve prose rhythm"

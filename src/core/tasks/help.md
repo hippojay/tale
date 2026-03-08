@@ -3,7 +3,7 @@ name: help
 description: Get unstuck by showing what workflow steps come next or answering questions about what to do
 ---
 
-# Task: SMAD Help
+# Task: TALE Help
 
 ## ROUTING RULES
 
@@ -18,7 +18,7 @@ description: Get unstuck by showing what workflow steps come next or answering q
 
 ### Command-Based Workflows
 When `command` field has a value:
-- Show the command prefixed with `/` (e.g., `/smad-bmm-create-prd`)
+- Show the command prefixed with `/` (e.g., `/tale-bmm-create-prd`)
 
 ### Agent-Based Workflows
 When `command` field is empty:
@@ -52,9 +52,9 @@ Determine what was just completed:
 
 ## EXECUTION
 
-1. **Load catalog** — Load `{project-root}/_smad/_config/smad-help.csv`
+1. **Load catalog** — Load `{project-root}/_tale/_config/tale-help.csv`
 
-2. **Resolve output locations and config** — Scan each folder under `_smad/` (except `_config`) for `config.yaml`. For each workflow row, resolve its `output-location` variables against that module's config so artifact paths can be searched. Also extract `communication_language` and `project_knowledge` from each scanned module's config.
+2. **Resolve output locations and config** — Scan each folder under `_tale/` (except `_config`) for `config.yaml`. For each workflow row, resolve its `output-location` variables against that module's config so artifact paths can be searched. Also extract `communication_language` and `project_knowledge` from each scanned module's config.
 
 3. **Ground in project knowledge** — If `project_knowledge` resolves to an existing path, read available documentation files (architecture docs, project overview, tech stack references) for grounding context. Use discovered project facts when composing any project-specific output. Never fabricate project-specific details — if documentation is unavailable, state so.
 

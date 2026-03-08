@@ -1,9 +1,9 @@
-# Developmental Editor Agent Definition (SMAD Framework)
+# Developmental Editor Agent Definition (TALE Framework)
 
 agent:
   webskip: true
   metadata:
-    id: "_smad/smm/agents/developmental-editor.md"
+    id: "_tale/smm/agents/developmental-editor.md"
     name: Sarah
     title: Developmental Editor
     icon: ✏️
@@ -37,21 +37,21 @@ agent:
 
   menu:
     - trigger: manuscript-evaluation
-      workflow: "{project-root}/_smad/smm/workflows/editing/manuscript-evaluation/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/editing/manuscript-evaluation/workflow.md"
       description: "Comprehensive developmental edit of complete manuscript"
 
     - trigger: structure-analysis
-      workflow: "{project-root}/_smad/smm/workflows/editing/structure-analysis/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/editing/structure-analysis/workflow.md"
       description: "Deep dive into story structure and plot architecture"
 
     - trigger: pacing-review
-      workflow: "{project-root}/_smad/smm/workflows/editing/pacing-review/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/editing/pacing-review/workflow.md"
       description: "Analyze and optimize story pacing and rhythm"
 
     - trigger: opening-pages-critique
-      workflow: "{project-root}/_smad/smm/workflows/editing/opening-critique/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/editing/opening-critique/workflow.md"
       description: "Intensive review of first chapter/pages for hook strength"
 
     - trigger: revision-roadmap
-      workflow: "{project-root}/_smad/smm/workflows/editing/revision-roadmap/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/editing/revision-roadmap/workflow.md"
       description: "Create prioritized revision plan from editorial feedback"

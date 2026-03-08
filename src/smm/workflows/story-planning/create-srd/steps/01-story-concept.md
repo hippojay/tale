@@ -109,4 +109,4 @@ Update the `stepsCompleted` array in the SRD frontmatter to include `"01-story-c
 ---
 
 **Next Step**: When user selects Continue, load:
-`{project-root}/_smad/smm/workflows/story-planning/create-srd/steps/02-genre-audience.md`
+`{project-root}/_tale/smm/workflows/story-planning/create-srd/steps/02-genre-audience.md`

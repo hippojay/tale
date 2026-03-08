@@ -1,9 +1,9 @@
-# World Builder Agent Definition (SMAD Framework)
+# World Builder Agent Definition (TALE Framework)
 
 agent:
   webskip: true
   metadata:
-    id: "_smad/smm/agents/world-builder.md"
+    id: "_tale/smm/agents/world-builder.md"
     name: Theodore
     title: World Builder
     icon: 🌍
@@ -37,21 +37,21 @@ agent:
 
   menu:
     - trigger: create-world
-      workflow: "{project-root}/_smad/smm/workflows/world-building/create-world/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/world-building/create-world/workflow.md"
       description: "Build comprehensive world foundation"
 
     - trigger: develop-culture
-      workflow: "{project-root}/_smad/smm/workflows/world-building/develop-culture/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/world-building/develop-culture/workflow.md"
       description: "Create detailed culture or society"
 
     - trigger: magic-system
-      workflow: "{project-root}/_smad/smm/workflows/world-building/magic-system/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/world-building/magic-system/workflow.md"
       description: "Design consistent magic or technology system"
 
     - trigger: location-detail
-      workflow: "{project-root}/_smad/smm/workflows/world-building/location-detail/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/world-building/location-detail/workflow.md"
       description: "Develop specific location in depth"
 
     - trigger: world-consistency
-      workflow: "{project-root}/_smad/smm/workflows/world-building/world-consistency/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/world-building/world-consistency/workflow.md"
       description: "Check world consistency across manuscript"

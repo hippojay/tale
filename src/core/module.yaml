@@ -1,8 +1,8 @@
 code: core
-name: "SMAD Core Module"
+name: "TALE Core Module"
 
-header: "SMAD Core Configuration"
-subheader: "Configure the core settings for your SMAD installation.\nThese settings will be used across all modules and agents."
+header: "TALE Core Configuration"
+subheader: "Configure the core settings for your TALE installation.\nThese settings will be used across all modules and agents."
 
 user_name:
   prompt: "What should agents call you? (Use your name or a team name)"
@@ -21,5 +21,5 @@ document_output_language:
 
 output_folder:
   prompt: "Where should output files be saved?"
-  default: "_smad-output"
+  default: "_tale-output"
   result: "{project-root}/{value}"

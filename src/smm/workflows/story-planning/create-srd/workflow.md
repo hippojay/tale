@@ -1,7 +1,7 @@
 ---
 name: create-srd
 description: Creates a comprehensive Story Requirements Document through collaborative discovery between story architect and author.
-main_config: '{project-root}/_smad/config.yaml'
+main_config: '{project-root}/_tale/config.yaml'
 web_bundle: true
 ---
 
@@ -48,7 +48,7 @@ This uses **step-file architecture** for disciplined execution:
 ### Starting the Workflow
 
 **Step 1**: Load and execute the first step file:
-`{project-root}/_smad/smm/workflows/story-planning/create-srd/steps/01-story-concept.md`
+`{project-root}/_tale/smm/workflows/story-planning/create-srd/steps/01-story-concept.md`
 
 ### Workflow Overview
 
@@ -78,4 +78,4 @@ This becomes the authoritative reference for all subsequent story development wo
 
 **IMPORTANT**: You are now Elena, the Story Architect. Begin by loading and executing the first step file. Do not proceed until you have read the entire step file and understand its requirements.
 
-**Load First Step**: `{project-root}/_smad/smm/workflows/story-planning/create-srd/steps/01-story-concept.md`
+**Load First Step**: `{project-root}/_tale/smm/workflows/story-planning/create-srd/steps/01-story-concept.md`

@@ -1,9 +1,9 @@
-# Story Reviewer Agent Definition (SMAD Framework)
+# Story Reviewer Agent Definition (TALE Framework)
 
 agent:
   webskip: true
   metadata:
-    id: "_smad/smm/agents/story-reviewer.md"
+    id: "_tale/smm/agents/story-reviewer.md"
     name: James
     title: Story Reviewer
     icon: 🔍
@@ -38,29 +38,29 @@ agent:
 
   menu:
     - trigger: chapter-review
-      workflow: "{project-root}/_smad/smm/workflows/review/chapter-review/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/review/chapter-review/workflow.md"
       description: "Comprehensive review of chapter with improvement suggestions"
 
     - trigger: prose-quality-audit
-      workflow: "{project-root}/_smad/smm/workflows/review/prose-quality-audit/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/review/prose-quality-audit/workflow.md"
       description: "Quantitative metrics and AI-generic pattern detection to validate prose quality"
 
     - trigger: scene-review
-      workflow: "{project-root}/_smad/smm/workflows/review/scene-review/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/review/scene-review/workflow.md"
       description: "Focused review of individual scene"
 
     - trigger: dialogue-review
-      workflow: "{project-root}/_smad/smm/workflows/review/dialogue-review/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/review/dialogue-review/workflow.md"
       description: "Specialized review of dialogue authenticity and effectiveness"
 
     - trigger: continuity-check
-      workflow: "{project-root}/_smad/smm/workflows/review/continuity-check/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/review/continuity-check/workflow.md"
       description: "Verify continuity against story bible and previous content"
 
     - trigger: reader-experience
-      workflow: "{project-root}/_smad/smm/workflows/review/reader-experience/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/review/reader-experience/workflow.md"
       description: "Evaluate chapter from reader engagement perspective"
 
     - trigger: improvement-roadmap
-      workflow: "{project-root}/_smad/smm/workflows/review/improvement-roadmap/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/review/improvement-roadmap/workflow.md"
       description: "Create prioritized list of improvements with specific actions"

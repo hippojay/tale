@@ -1,9 +1,9 @@
-# Screenwriter Agent Definition (SMAD Framework)
+# Screenwriter Agent Definition (TALE Framework)
 
 agent:
   webskip: true
   metadata:
-    id: "_smad/smm/agents/screenwriter.md"
+    id: "_tale/smm/agents/screenwriter.md"
     name: Dominic
     title: Screenwriter
     icon: 🎬
@@ -39,21 +39,21 @@ agent:
 
   menu:
     - trigger: adapt-to-screenplay
-      workflow: "{project-root}/_smad/smm/workflows/screenwriting/adapt-to-screenplay/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/screenwriting/adapt-to-screenplay/workflow.md"
       description: "Adapt existing story, novel, or idea into screenplay format"
 
     - trigger: write-screenplay
-      workflow: "{project-root}/_smad/smm/workflows/screenwriting/write-screenplay/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/screenwriting/write-screenplay/workflow.md"
       description: "Write original screenplay from concept or outline"
 
     - trigger: write-scene-screenplay
-      workflow: "{project-root}/_smad/smm/workflows/screenwriting/write-scene/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/screenwriting/write-scene/workflow.md"
       description: "Write individual screenplay scene with proper formatting"
 
     - trigger: screenplay-structure
-      workflow: "{project-root}/_smad/smm/workflows/screenwriting/structure-breakdown/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/screenwriting/structure-breakdown/workflow.md"
       description: "Analyze or create screenplay structure with beat sheet"
 
     - trigger: dialogue-pass
-      workflow: "{project-root}/_smad/smm/workflows/screenwriting/dialogue-pass/workflow.md"
+      workflow: "{project-root}/_tale/smm/workflows/screenwriting/dialogue-pass/workflow.md"
       description: "Polish screenplay dialogue for subtext and speakability"

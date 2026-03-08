@@ -459,10 +459,10 @@ The hallway stretched endlessly ahead, each shadow a potential threat."
 - Before final polish phase
 
 **Integration with other workflows:**
-- Run AFTER `/smad-smm-write-chapter`
-- Run BEFORE `/smad-smm-chapter-review`
-- Use results to inform `/smad-smm-revise-chapter`
-- Compare to `/smad-smm-establish-narrative-voice` targets
+- Run AFTER `/tale-smm-write-chapter`
+- Run BEFORE `/tale-smm-chapter-review`
+- Use results to inform `/tale-smm-revise-chapter`
+- Compare to `/tale-smm-establish-narrative-voice` targets
 
 **For experienced authors:**
 - Focus on anti-slop detection
