@@ -16,8 +16,6 @@ export default [
       'test/template-test-generator/**/*.md',
       'test/fixtures/**',
       'test/fixtures/**/*.yaml',
-      '_bmad/**',
-      '_bmad*/**',
       // Build output
       'build/**',
       // Website uses ESM/Astro - separate linting ecosystem
