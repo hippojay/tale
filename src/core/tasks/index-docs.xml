@@ -1,4 +1,4 @@
-<task id="_smad/core/tasks/index-docs" name="Index Docs"
+<task id="_tale/core/tasks/index-docs" name="Index Docs"
   description="Generates or updates an index.md of all documents in the specified directory">
   <llm critical="true">
     <i>MANDATORY: Execute ALL steps in the flow section IN EXACT ORDER</i>

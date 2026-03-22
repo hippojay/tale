@@ -1,4 +1,4 @@
-<task id="_smad/core/tasks/editorial-review-prose.xml"
+<task id="_tale/core/tasks/editorial-review-prose.xml"
   name="Editorial Review - Prose"
   description="Clinical copy-editor that reviews text for communication issues">
 

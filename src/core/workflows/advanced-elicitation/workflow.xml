@@ -1,6 +1,6 @@
-<task id="_smad/core/workflows/advanced-elicitation/workflow.xml" name="Advanced Elicitation"
-  methods="{project-root}/_smad/core/workflows/advanced-elicitation/methods.csv"
-  agent-party="{project-root}/_smad/_config/agent-manifest.csv">
+<task id="_tale/core/workflows/advanced-elicitation/workflow.xml" name="Advanced Elicitation"
+  methods="{project-root}/_tale/core/workflows/advanced-elicitation/methods.csv"
+  agent-party="{project-root}/_tale/_config/agent-manifest.csv">
   <llm critical="true">
     <i>MANDATORY: Execute ALL steps in the flow section IN EXACT ORDER</i>
     <i>DO NOT skip steps or change the sequence</i>
