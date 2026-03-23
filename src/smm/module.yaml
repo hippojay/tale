@@ -34,6 +34,29 @@ project_type:
       label: "Screenplay - Script for film or television"
     - value: "stage_play"
       label: "Stage Play - Script for theater"
+    - value: "musical_theatre"
+      label: "Musical Theatre - Book, lyrics, and song placement for a stage musical"
+
+musical_theatre_style:
+  prompt:
+    - "What style of musical are you writing? (Only relevant for musical theatre projects)"
+  default: "book_musical"
+  result: "{value}"
+  single-select:
+    - value: "book_musical"
+      label: "Book Musical - Story-driven with integrated songs and scenes (Les Misérables, Hamilton, Fun Home)"
+    - value: "concept_musical"
+      label: "Concept Musical - Theme or idea-driven rather than linear narrative (Company, A Chorus Line, Cabaret)"
+    - value: "jukebox_musical"
+      label: "Jukebox Musical - Built around pre-existing songs (Mamma Mia!, Jersey Boys)"
+    - value: "revue"
+      label: "Revue - Loosely connected songs without sustained narrative"
+    - value: "chamber_musical"
+      label: "Chamber Musical - Intimate scale, small cast, minimal staging (The Band's Visit, tick tick... BOOM!)"
+    - value: "rock_musical"
+      label: "Rock Musical - Rock/pop score driving dramatic storytelling (Spring Awakening, Rent, Hadestown)"
+    - value: "sung_through"
+      label: "Sung-Through - Minimal or no spoken dialogue; story told entirely in song (Hamilton, Les Misérables)"
 
 primary_genre:
   prompt: "What is the primary genre of your work?"
@@ -154,3 +177,6 @@ agents:
   - publishing-strategist.agent.yaml
   # Screenwriting
   - screenwriter.agent.yaml
+  # Musical Theatre
+  - musical-theatre-book-writer.agent.yaml
+  - musical-theatre-lyricist.agent.yaml

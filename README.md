@@ -1,10 +1,20 @@
 # TALE
 
-**The Author's Literary Engine** — An AI-driven literary development framework with 12 specialized agents, 60+ guided workflows, and adaptive intelligence that adjusts from short stories to epic novels.
+**The Author's Literary Engine** — An AI-driven literary development framework with 14 specialized agents, 70+ guided workflows, and adaptive intelligence that adjusts from short stories to full-scale musicals.
 
 Built on the proven [BMAD Method](https://github.com/bmad-code-org/BMAD-METHOD) framework for software development, TALE adapts BMAD's agent-based workflow orchestration, party mode collaboration, and structured elicitation techniques to the literary domain.
 
-TALE transforms the writing process from blank page to polished manuscript through structured collaboration with expert AI agents who guide you through planning, writing, enrichment, review, editing, and publishing.
+TALE transforms the writing process from blank page to polished manuscript through structured collaboration with expert AI agents who guide you through planning, writing, enrichment, review, editing, and publishing — across novels, screenplays, stage plays, and musical theatre.
+
+## What You Can Build
+
+| Format | Agents | Starting workflow |
+|---|---|---|
+| **Novel / Novella / Short Story** | Elena, Marcus, Theodore, Vivian, James, Sarah, Catherine, Patricia, Alexandra | `/tale-smm-create-srd` |
+| **Non-Fiction** | Elena, Marcus, Sarah, Catherine, Patricia, Alexandra | `/tale-smm-create-srd` |
+| **Screenplay** | Dominic + all novel agents | `/tale-smm-screenplay-structure` |
+| **Stage Play** | Elena, Marcus + all novel agents | `/tale-smm-create-srd` |
+| **Musical Theatre** | Alice (Book Writer), Larry (Lyricist) + all novel agents | `/tale-smm-create-musical-brief` |
 
 ## Why TALE?
 
@@ -13,7 +23,7 @@ Traditional AI writing tools generate content for you, producing generic results
 - **AI Intelligent Help**: `/tale-help` guides you from beginning to end, adapting advice based on your project stage
 - **Genre-Adaptive**: Automatically adjusts guidance based on your genre, prose sophistication level, and writing experience
 - **Structured Workflows**: Grounded in literary best practices across planning, writing, editing, and publishing
-- **Specialized Agents**: 12 domain experts (Story Architect, Character Developer, Ghost Writer, Developmental Editor, and more)
+- **Specialized Agents**: 14 domain experts across prose fiction, screenwriting, and musical theatre
 - **Party Mode**: Inherited from BMAD — bring multiple agent personas into one session to brainstorm, troubleshoot, or discuss your project collaboratively
 - **Complete Lifecycle**: From concept to publication, TALE is there with you every step of the way
 
@@ -29,7 +39,9 @@ Open Kiro CLI in your writing project directory and start with:
 
 This tells you exactly what's next based on your project stage and what modules you have installed.
 
-### Fast Path (Short Works)
+---
+
+### Fast Path — Short Works (Short Stories, Novellas)
 
 For short stories, novellas, or clear concepts — 4 core workflows:
 
@@ -38,7 +50,9 @@ For short stories, novellas, or clear concepts — 4 core workflows:
 3. `/tale-smm-write-chapter` — Write each chapter (repeat as needed)
 4. `/tale-smm-chapter-review` — Review and validate quality
 
-### Full Planning Path (Novels & Complex Works)
+---
+
+### Full Planning Path — Novels & Complex Works
 
 For novels, series, or complex narratives — comprehensive planning then write:
 
@@ -49,20 +63,48 @@ For novels, series, or complex narratives — comprehensive planning then write:
 5. `/tale-smm-chapter-planning` — Chapter-by-chapter outline with beats
 6. **Repeat per chapter:** `/tale-smm-write-chapter` → `/tale-smm-enrich-chapter` → `/tale-smm-chapter-review` → `/tale-smm-revise-chapter` (if needed)
 7. **Editorial pass:** `/tale-smm-manuscript-evaluation` → `/tale-smm-structure-analysis` → `/tale-smm-pacing-review`
-8. **Polish:** `/tale-smm-chapter-edit` (line editing) → `/tale-smm-prose-polish` → `/tale-smm-final-proof`
+8. **Polish:** `/tale-smm-line-edit-chapter` → `/tale-smm-prose-polish` → `/tale-smm-final-proof`
 
-Every workflow tells you what's next. Optional phases (world-building, character arcs, publishing strategy) are available when you need them — ask `/tale-help` anytime.
+---
+
+### Screenplay Path
+
+For original screenplays or adaptations:
+
+1. `/tale-smm-screenplay-structure` — Beat sheet and three-act structure
+2. `/tale-smm-create-profiles` — Character profiles (optional but recommended)
+3. `/tale-smm-write-screenplay` — Write original screenplay, or `/tale-smm-adapt-to-screenplay` to adapt existing work
+4. **Repeat per scene:** `/tale-smm-write-scene-screenplay`
+5. **Polish:** `/tale-smm-screenplay-dialogue` — Dialogue pass for subtext and speakability
+
+---
+
+### Musical Theatre Path
+
+For original musicals — book, lyrics, and song placement:
+
+1. `/tale-smm-create-musical-brief` — **Start here.** Guided 6-step creation of the Musical Bible: concept, form, characters, song world, structure sketch. Produces your foundation document.
+2. `/tale-smm-musical-structure` — Expand the sketch into a full two-act beat sheet with complete song placement map
+3. `/tale-smm-create-profiles` — Character profiles (recommended — Alice and Larry both need them)
+4. **For each song moment (Alice):** `/tale-smm-dialogue-to-song` — Identify the trigger, determine Internal/External voice, produce Song Brief
+5. **For each song (Larry):** `/tale-smm-song-sheet` → `/tale-smm-write-lyric`
+6. **For each book scene (Alice):** `/tale-smm-write-book-scene` — Industry-standard libretto format
+7. **Polish (Larry):** `/tale-smm-lyric-polish` — Prosody, rhyme quality, character voice, dramatic arc
+
+Every workflow tells you what's next. Ask `/tale-help` at any stage.
+
+---
 
 ## The Agents
 
-TALE provides 12 specialized literary agents organized by function:
+TALE provides 14 specialized literary agents organized by function:
 
 ### Story Development
 
 **Elena — Story Architect** 📚
 - Master story structure and narrative design
 - Three-act frameworks, plot arcs, pacing
-- Workflows: Create Story Structure, Chapter Planning, Character Arcs, Genre Compliance, Pacing Analysis
+- Workflows: Create SRD, Create Story Bible, Create Story Structure, Chapter Planning, Character Arcs, Genre Compliance, Pacing Analysis
 
 **Marcus — Character Developer** 🎭
 - Character psychology, motivation, and growth
@@ -119,10 +161,24 @@ TALE provides 12 specialized literary agents organized by function:
 
 ### Screenwriting
 
-**Oliver — Screenwriter** 🎬
-- Screenplay adaptation and formatting
-- Scene writing in screenplay format
-- Workflows: Adapt to Screenplay, Write Screenplay, Write Scene, Beat Sheet, Treatment
+**Dominic — Screenwriter** 🎬
+- Screenplay writing, adaptation, and industry-standard formatting
+- Visual storytelling, subtext, scene economy
+- Workflows: Adapt to Screenplay, Write Screenplay, Write Scene, Screenplay Structure, Dialogue Pass
+
+### Musical Theatre
+
+**Alice — Musical Theatre Book Writer** 🎭
+- Book writing, dramaturgy, and song placement
+- Two-act structure, the moment dialogue becomes song, industry-standard libretto format
+- Applies the Song Trigger Framework to identify every musical moment
+- Workflows: Create Musical Brief, Musical Structure, Write Book Scene, Dialogue to Song
+
+**Larry — Musical Theatre Lyricist** 🎵
+- Lyric writing with full musical theatre craft
+- Prosody, rhyme, song form, character voice, emotional arc
+- Built on the Watershed songwriting principles: active songs, AABA form, specificity, perfect rhyme
+- Workflows: Song Sheet, Write Lyric, Lyric Polish
 
 ### Orchestration
 
@@ -131,14 +187,16 @@ TALE provides 12 specialized literary agents organized by function:
 - Party mode facilitation and advanced elicitation
 - Available for any complex multi-agent coordination
 
+---
+
 ## Workflow Phases
 
 TALE organizes workflows into 5 phases that mirror the writing lifecycle:
 
-### Phase 1: Planning (19 workflows)
+### Phase 1: Planning
 
 **Story Planning** — Foundation documents and structure
-- Create SRD (Story Requirements Document) — *required*
+- Create SRD (Story Requirements Document) — *required for novels/prose*
 - Create Story Bible — Single source of truth
 - Create Story Structure — Three-act framework
 - Chapter Planning — Detailed outlines
@@ -162,10 +220,15 @@ TALE organizes workflows into 5 phases that mirror the writing lifecycle:
 **Story Architecture** — Analysis and optimization
 - Pacing Analysis
 - Structure Analysis
+- Screenplay Structure (beat sheet)
 
-### Phase 2: Writing (15 workflows)
+**Musical Theatre Planning** — Foundation for musicals
+- Create Musical Brief — *required for musical theatre; start here* — 6-step guided creation of the Musical Bible
+- Musical Structure — Full two-act beat sheet with song placement map
 
-**Writing Production** — Draft creation
+### Phase 2: Writing
+
+**Writing Production** — Prose draft creation
 - Write Chapter — *core workflow*
 - Write Scene
 - Revise Chapter
@@ -179,7 +242,18 @@ TALE organizes workflows into 5 phases that mirror the writing lifecycle:
 - Sensory Audit
 - Character Presence
 
-### Phase 3: Review (12 workflows)
+**Screenwriting** — Script writing and adaptation
+- Adapt to Screenplay
+- Write Screenplay
+- Write Scene (Screenplay)
+
+**Musical Theatre Writing** — Book and lyric creation
+- Write Book Scene — Industry-standard libretto format (Alice)
+- Dialogue to Song — Identify the song moment; produce Song Brief (Alice)
+- Create Song Sheet — Per-song reference document with trigger, voice, arc, lyric draft (Larry)
+- Write Lyric — Full lyric with form, prosody, rhyme, character voice, emotional arc (Larry)
+
+### Phase 3: Review
 
 **Story Review** — Quality assurance
 - Chapter Review
@@ -195,9 +269,8 @@ TALE organizes workflows into 5 phases that mirror the writing lifecycle:
 - Pacing Review
 - Opening Critique
 - Revision Roadmap
-- Theme Analysis
 
-### Phase 4: Polish (13 workflows)
+### Phase 4: Polish
 
 **Line Editing** — Sentence-level refinement
 - Chapter Edit
@@ -207,13 +280,17 @@ TALE organizes workflows into 5 phases that mirror the writing lifecycle:
 - Rhythm Analysis
 
 **Copy Editing** — Grammar and consistency
-- Chapter Edit
+- Copy Edit Chapter
 - Style Sheet
 - Consistency Pass
 - Fact Check
 - Final Proof
 
-### Phase 5: Publishing (5 workflows)
+**Screenplay & Musical Theatre Polish**
+- Screenplay Dialogue Pass — Subtext and speakability (Dominic)
+- Lyric Polish — Prosody, rhyme quality, character voice, dramatic arc (Larry)
+
+### Phase 5: Publishing
 
 **Publishing Strategy** — Market and launch
 - Market Analysis
@@ -230,6 +307,90 @@ TALE organizes workflows into 5 phases that mirror the writing lifecycle:
 - `/tale-party-mode` — Multi-agent collaborative discussions
 - `/tale-index-docs` — Create lightweight doc index for LLM scanning
 - `/tale-shard-doc` — Split large documents into manageable sections
+
+---
+
+## Musical Theatre in Depth
+
+### What Makes a Musical Different
+
+A musical is not a play with songs added. It is three mediums — spoken word, music, and staging — that must serve each other. Songs are not decoration; they are the moments when emotion exceeds what speech can carry.
+
+TALE's musical theatre framework is built around two key ideas:
+
+**The Song Trigger Framework** — 10 reasons a character stops speaking and starts singing:
+
+| # | Trigger | Example |
+|---|---|---|
+| 1 | Declaration of Want | *Somewhere Over the Rainbow*, *Defying Gravity* |
+| 2 | Emotional Overflow | *Memory*, *All I Ask of You* |
+| 3 | Conflict Escalation | *The Confrontation*, *Anything You Can Do* |
+| 4 | Decision/Revelation | *Soliloquy* (Carousel), *Being Alive* |
+| 5 | Communal Expression | *One Day More*, *Comedy Tonight* |
+| 6 | Comic Exaggeration | *Adelaide's Lament*, *I Feel Pretty* |
+| 7 | Seduction/Persuasion | *Shall We Dance*, charm songs |
+| 8 | Narrative Compression | Journey songs, backstory numbers |
+| 9 | Thematic Crystallisation | *For Good*, *No Day But Today* |
+| 10 | Reprise/Echo | Any reprise that lands with new meaning |
+
+The rule beneath all of them: **the song must change something** — the character, the relationship, or the audience's understanding. A song that ends in the same place it began has no reason to exist.
+
+**Song Voice** — every song has a voice dimension that must be established before a lyric is written:
+
+- **Internal / Soliloquy** — character sings to themselves, the audience, or an absent person. The other character doesn't hear it. Uses "I/he/she". Creates dramatic irony. (*On My Own*, *Being Alive*, *Somewhere Over the Rainbow*)
+- **External / Direct** — character sings to another present character who participates. Uses "you". Escalates the relationship. (*All I Ask of You*, *People Will Say We're in Love*)
+- **Mixed** — begins as one, shifts to the other
+
+This distinction governs everything: pronoun, emotional target, whether the other character responds.
+
+### Musical Styles Supported
+
+| Style | Description | Touchstones |
+|---|---|---|
+| **Book Musical** | Story-driven; spoken scenes alternate with integrated songs | *Hamilton*, *Fun Home*, *Les Misérables* |
+| **Concept Musical** | Theme- or idea-driven rather than linear narrative | *Company*, *A Chorus Line*, *Cabaret* |
+| **Jukebox Musical** | Built around pre-existing songs | *Mamma Mia!*, *Jersey Boys* |
+| **Revue** | Loosely connected numbers, minimal narrative | Celebration of theme or performer |
+| **Chamber Musical** | Intimate scale, small cast | *The Band's Visit*, *tick, tick... BOOM!* |
+| **Rock Musical** | Rock/pop score drives dramatic storytelling | *Spring Awakening*, *Rent*, *Hadestown* |
+| **Sung-Through** | Minimal or no spoken dialogue | *Hamilton*, *Les Misérables* (original) |
+
+### Key Musical Theatre Artifacts
+
+**Musical Bible** — the foundation document (equivalent to the Story Bible for prose)
+- Central dramatic question, protagonist want vs. need, the show's argument
+- Musical style, score description, reference shows
+- Song Placement Map with all numbers across both acts
+- Character vocal register, recurring motifs, style notes for Alice and Larry
+
+**Song Sheet** — per-song reference document (one per number)
+- Song Trigger, Song Voice (Internal/External/Mixed)
+- Emotional arc: start state → end state
+- Song form (Verse-A-A-B-A, verse-chorus, through-composed)
+- Central image or metaphor, reference touchstones
+- Lyric draft with structural labels (VERSE, A1, A2, BRIDGE, A3, CODA)
+- Development status tracking
+
+**Musical Script** — the libretto in industry-standard format
+- Character names in ALL CAPS; dialogue in regular prose
+- Stage directions in parentheses/italics; present tense; lean
+- Song cues centered; lyrics indented under character name
+- Act/Scene headings centered and all caps
+
+### Lyric Craft Principles (Larry's Framework)
+
+Larry's lyric writing is built on proven musical theatre craft:
+
+1. **Active songs only** — something must change by the final note
+2. **Song form matters** — Verse-A-A-B-A for dramatic weight; the Bridge is where the character breaks through
+3. **Prosody first** — natural speech stress must align with musical stress; never contort syntax for a rhyme
+4. **Rhyme perfectly or not at all** — a near-rhyme lands like a wet dishcloth
+5. **Come in through the back door** — metaphor and image, not stated emotion
+6. **Character voice is absolute** — lyrics must sound like this character, not the writer
+7. **Be specific** — musical theatre is not pop radio; no need to generalise
+8. **Brevity is wit** — say it in one line if you can
+
+---
 
 ## Prose Sophistication System
 
@@ -253,6 +414,8 @@ TALE adapts writing output to your target audience and literary ambition through
 
 Set your prose sophistication level during project configuration. All agents adapt their output accordingly.
 
+---
+
 ## Project Configuration
 
 TALE collects key project details during setup to personalize agent guidance:
@@ -265,60 +428,53 @@ TALE collects key project details during setup to personalize agent guidance:
 
 **Project Settings** (from SMM Module)
 - Project title
-- Project type — Novel, novella, short story, non-fiction, screenplay, stage play
+- Project type — Novel, novella, short story, non-fiction, screenplay, stage play, **musical theatre**
+- Musical theatre style — Book musical, concept musical, jukebox musical, revue, chamber musical, rock musical, sung-through *(musical theatre projects only)*
 - Primary genre — Literary fiction, commercial fiction, romance, mystery, sci-fi, fantasy, historical, YA, memoir, biography, self-help, other
 - Target word count — 5k to 100k+ words
 - Writing experience — Beginner, intermediate, experienced, professional
 - Prose sophistication — Accessible, polished, literary, experimental
 - Writing goals — Complete manuscript, improve craft, traditional publishing, self-publishing, personal satisfaction, build platform, contest submission
 
-These settings inform agent behavior, workflow recommendations, and output style.
+---
 
 ## Key Artifacts
 
-TALE workflows produce structured documents that guide your writing:
-
-**Story Requirements Document (SRD)** — Foundation document
+**Story Requirements Document (SRD)** — Foundation document *(novels, prose, screenplays)*
 - Premise, themes, target audience
 - Story goals and success criteria
 - Genre expectations and constraints
-- Created by: Story Architect
 
-**Story Bible** — Single source of truth
-- Characters, world, timeline
-- Continuity and consistency reference
+**Story Bible** — Single source of truth *(novels and prose)*
+- Characters, world, timeline, continuity reference
 - Living document updated throughout project
-- Created by: Story Architect
 
-**Story Structure** — Narrative architecture
-- Three-act structure with turning points
-- Plot progression and character arcs
-- Scene sequences and dramatic beats
-- Created by: Story Architect
+**Musical Bible** — Foundation document *(musical theatre)*
+- Central dramatic question, want/need, the show's argument
+- Song Placement Map across both acts (type, trigger, voice, character, function)
+- Musical style, reference shows, score description, recurring motifs
+
+**Song Sheet** — Per-song reference *(musical theatre)*
+- Song Trigger, Song Voice, emotional arc, song form
+- Central image, reference touchstones, lyric draft
+- Status tracking from brief through final lyric
+
+**Story Structure** — Narrative architecture *(prose and screenplay)*
+- Three-act structure with turning points and scene sequences
 
 **Chapter Outlines** — Detailed scene plans
-- Chapter objectives and conflicts
-- Scene beats and character goals
-- Pacing notes and cliffhangers
-- Created by: Story Architect
+- Chapter objectives, scene beats, character goals, pacing notes
 
 **Character Profiles** — Psychology and motivation
-- Background, personality, desires
-- Internal and external conflicts
-- Dialogue voice and mannerisms
-- Created by: Character Developer
+- Background, personality, desires, internal and external conflicts, dialogue voice
 
-**Manuscript Chapters** — Your actual prose
-- Written from outlines and story beats
-- Enriched with sensory detail and atmosphere
-- Reviewed and revised through editorial passes
-- Created by: Ghost Writer, Narrative Enrichment
+**Manuscript Chapters / Book Scenes / Screenplay Pages** — The actual writing
+- Written from outlines and song briefs; enriched and reviewed through editorial passes
 
 **Editorial Reports** — Quality assessments
-- Manuscript evaluation and structure analysis
-- Pacing review and improvement roadmaps
-- Chapter reviews and revision guidance
-- Created by: Developmental Editor, Story Reviewer
+- Manuscript evaluation, structure analysis, pacing review, chapter reviews
+
+---
 
 ## Party Mode
 
@@ -327,7 +483,7 @@ Party Mode brings multiple TALE agents into one collaborative session for dynami
 **Use Party Mode for:**
 - Brainstorming story concepts with diverse agent perspectives
 - Troubleshooting plot problems with Story Architect, Character Developer, and Developmental Editor
-- Discussing character arcs with Character Developer and Story Reviewer
+- For musicals: Alice and Larry working through a song moment together — Alice identifies the trigger and voice, Larry responds with lyric approach
 - Planning publishing strategy with Publishing Strategist and Developmental Editor
 - Any situation where multiple expert viewpoints add value
 
@@ -339,33 +495,11 @@ Party Mode brings multiple TALE agents into one collaborative session for dynami
 5. Agents can build on each other's ideas and debate approaches
 6. Session concludes with synthesis and next steps
 
-Party Mode maintains each agent's personality, expertise, and communication style while enabling natural collaborative conversation.
+---
 
-## Advanced Features
+## Typical Workflow Sequences
 
-**Advanced Elicitation** — Deep requirements gathering (from BMAD Core)
-- Triggered automatically when workflows need more information
-- Socratic questioning to uncover unstated needs
-- Helps clarify vision when you're uncertain
-
-**Brainstorming** — Structured ideation (from BMAD Core)
-- Multiple techniques: mind mapping, SCAMPER, reverse thinking, random word association
-- Interactive facilitation with follow-up questions
-- Captures and organizes ideas for later use
-
-**Document Sharding** — Manage large files
-- Split manuscripts into manageable sections
-- Maintain navigation and structure
-- Useful when chapters exceed 500 lines
-
-**Document Indexing** — Quick LLM scanning
-- Create lightweight index of available documents
-- Help agents understand project structure without loading everything
-- Speeds up context gathering
-
-## Typical Workflow Sequence
-
-Here's how a novel project typically flows through TALE:
+### Novel (Full Planning Path)
 
 **Week 1-2: Foundation**
 1. Create SRD — Define premise, themes, audience
@@ -376,61 +510,67 @@ Here's how a novel project typically flows through TALE:
 **Week 3-4: Detailed Planning**
 5. Chapter Planning — Outline all chapters with beats
 6. Character Arcs — Map growth to plot progression
-7. World Building (if needed) — Develop cultures, magic systems, locations
+7. World Building (if needed)
 
 **Months 2-6: Writing Production** (repeat per chapter)
-8. Write Chapter — Draft from outline
-9. Enrich Chapter — Add sensory detail and atmosphere
-10. Chapter Review — Quality check and continuity
-11. Revise Chapter (if needed) — Address review feedback
+8. Write Chapter → Enrich Chapter → Chapter Review → Revise Chapter (if needed)
 
 **Month 7: Developmental Edit**
-12. Manuscript Evaluation — Big-picture assessment
-13. Structure Analysis — Plot architecture review
-14. Pacing Review — Rhythm and flow optimization
-15. Revision Roadmap — Prioritized improvement plan
+9. Manuscript Evaluation → Structure Analysis → Pacing Review → Revision Roadmap
 
-**Month 8: Line Editing**
-16. Chapter Edit (all chapters) — Sentence-level refinement
-17. Prose Polish — Enhance language and rhythm
-18. Dialogue Tightening — Sharpen conversations
-
-**Month 9: Copy Editing**
-19. Style Sheet — Establish consistency rules
-20. Consistency Pass — Apply style sheet
-21. Fact Check — Verify accuracy
-22. Final Proof — Last grammar and typo pass
+**Month 8-9: Line and Copy Editing**
+10. Line Edit Chapter → Prose Polish → Copy Edit → Style Sheet → Final Proof
 
 **Month 10: Publishing Prep**
-23. Market Analysis — Identify target market and comps
-24. Query Letter — Craft compelling pitch
-25. Synopsis — Write 1-2 page summary
-26. Publishing Path — Choose traditional vs. self-publishing
-27. Launch Plan — Marketing and release strategy
+11. Market Analysis → Query Letter → Synopsis → Publishing Path → Launch Plan
 
-This timeline is illustrative — your pace will vary based on project scope, writing experience, and available time.
+---
+
+### Musical Theatre
+
+**Foundation (Alice)**
+1. Create Musical Brief — 6-step guided session producing the Musical Bible
+2. Musical Structure — Full beat sheet with complete song placement map
+3. Create Character Profiles (Marcus) — needed by both Alice and Larry
+
+**Writing Production** (repeat per scene/song cycle)
+4. Write Book Scene (Alice) — the spoken scene in libretto format
+5. Dialogue to Song (Alice) — identify the trigger, voice, and dramatic function; produce Song Brief
+6. Song Sheet (Larry) — per-song document with all craft specifications
+7. Write Lyric (Larry) — complete lyric with form labels and emotional arc
+
+**Polish**
+8. Lyric Polish (Larry) — prosody, rhyme, character voice, arc check
+9. Chapter Review (James) — continuity and dramatic logic across scenes
+
+**Structure Check** (after both acts drafted)
+10. Musical Structure (Alice) — revisit placement map; check act balance and structural flags
+
+---
 
 ## Tips for Success
 
-**Start with the SRD** — Don't skip the Story Requirements Document. It's your foundation and prevents costly rewrites later.
+**Start with the right foundation document** — For prose and screenplays, that's the SRD. For musicals, it's the Musical Bible via Create Musical Brief. Don't skip it.
 
-**Use the Story Bible** — Keep it updated as your world and characters evolve. It's your continuity lifeline.
+**For musicals: answer the essential question first** — *Why does this story need to be a musical?* If you can't answer that, the songs will feel like interruptions rather than inevitabilities. The Create Musical Brief workflow will help you find the answer.
+
+**Use Song Sheets** — Keep one Song Sheet per number, separate from the Musical Bible. Progressive disclosure keeps context focused and Larry working on one song at a time.
 
 **Follow the phases** — Planning → Writing → Review → Polish → Publishing. Skipping phases creates problems downstream.
 
-**Iterate per chapter** — Write → Enrich → Review → Revise. This cycle produces higher quality drafts.
+**Iterate per chapter / scene** — Write → Enrich/Polish → Review → Revise. This cycle produces higher quality drafts.
 
 **Ask for help** — Use `/tale-help` whenever you're stuck or unsure what's next.
 
-**Leverage Party Mode** — Multiple agent perspectives solve problems faster than solo work.
+**Leverage Party Mode** — Multiple agent perspectives solve problems faster than solo work. For musicals, Alice and Larry together are especially effective for the moment a scene tips into song.
 
-**Match prose sophistication to genre** — YA readers expect different prose than literary fiction readers. Set your level appropriately.
+**Match prose sophistication to genre** — YA readers expect different prose than literary fiction readers. Musical theatre has its own register — the book scenes should feel like the same world as the lyrics.
 
 **Trust the process** — TALE's structure exists because it works. Resist the urge to skip steps.
 
-**Commit to revision** — First drafts are never final. Plan for multiple editorial passes.
+**Commit to revision** — First drafts and first lyrics are never final. Plan for multiple passes.
 
-**Know your goals** — Traditional publishing requires different prep than self-publishing. Set goals early.
+---
 
 ## Community & Support
 
